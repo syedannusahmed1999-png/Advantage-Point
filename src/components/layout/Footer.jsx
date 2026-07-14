@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Shield, ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.svg";
 
 const footerLinks = {
   Services: [
@@ -67,12 +68,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-400 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">AP</span>
-              </div>
-              <span className="font-heading font-bold text-white text-lg tracking-tight">
-                Advantage Point
-              </span>
+              <img src={logo} alt="Advantage Point logo" className="h-10 w-auto" />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               National leader in behavioral health assessments and telehealth counseling since 2012.

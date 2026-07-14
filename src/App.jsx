@@ -7,13 +7,13 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
 import SiteLayout from '@/components/layout/SiteLayout';
-import Home from '@/Pages/Home';
-import About from '@/Pages/About';
-import Services from '@/Pages/Services';
-import Providers from '@/Pages/Providers';
-import HowItWorks from '@/Pages/HowItWork';
-import Contact from '@/Pages/Contact';
-import GetStarted from '@/Pages/GetStarted';
+import Home from '@/pages/Home';
+import About from '@/pages/About';
+import Services from '@/pages/Services';
+import Providers from '@/pages/Providers';
+import HowItWorks from '@/pages/HowItWork';
+import Contact from '@/pages/Contact';
+import GetStarted from '@/pages/GetStarted';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();

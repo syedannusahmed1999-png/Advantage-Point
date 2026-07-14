@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.svg";
 
 const navLinks = [
   { label: "About", path: "/about" },
@@ -50,17 +51,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-emerald-500 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AP</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-heading font-bold text-slate-900 text-lg tracking-tight">
-                Advantage Point
-              </span>
-              <span className="block text-[10px] font-semibold uppercase tracking-widest text-slate-500 -mt-0.5">
-                Behavioral
-              </span>
-            </div>
+            <img src={logo} alt="Advantage Point logo" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
