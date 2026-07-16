@@ -73,9 +73,10 @@ export default function ServicesSection() {
                 to={service.link}
                 className="group block h-full p-8 rounded-2xl bg-white border border-slate-100 hover:border-blue-100 hover:shadow-lg hover:shadow-blue-600/5 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-50 group-hover:bg-blue-100 flex items-center justify-center transition-colors">
+                {/* <div className="w-12 h-12 rounded-xl bg-blue-50 group-hover:bg-blue-100 flex items-center justify-center transition-colors">
                   <img src={service.image} alt={service.title} className="w-6 h-6 text-blue-600" />
-                </div>
+                </div> */}
+                 <img src={service.image} alt={service.title} className="w-6 h-6 text-blue-600" />
                 <h3 className="mt-5 font-heading font-bold text-lg text-slate-900 group-hover:text-blue-600 transition-colors">
                   {service.title}
                 </h3>
