@@ -3,40 +3,47 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Heart, Shield, MessageCircle, Sun, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
+import Img1 from "@/assets/images/20.png";
+import Img2 from "@/assets/images/21.png";
+import Img3 from "@/assets/images/22.png";
+import Img4 from "@/assets/images/23.png";
+import Img5 from "@/assets/images/24.png";
+import Img6 from "@/assets/images/25.png";
+
 
 const services = [
   {
-    icon: Brain,
+    image: Img1,
     title: "Behavioral Assessments",
     description: "Comprehensive psychological evaluations for surgical, bariatric, and pain management patients.",
     link: "/services#assessments",
   },
   {
-    icon: MessageCircle,
+    image: Img2,
     title: "General Counseling",
     description: "Individual therapy sessions with licensed clinicians for a wide range of mental health concerns.",
     link: "/services#counseling",
   },
   {
-    icon: Heart,
+    image: Img3,
     title: "Anxiety Therapy",
     description: "Evidence-based treatment for generalized anxiety, social anxiety, and panic disorders.",
     link: "/services#anxiety",
   },
   {
-    icon: Sun,
+    image: Img4,
     title: "Depression Counseling",
     description: "Supportive therapy to help you navigate depression and rediscover joy and purpose.",
     link: "/services#depression",
   },
   {
-    icon: Shield,
+    image: Img5,
     title: "Trauma & PTSD",
     description: "Specialized trauma-focused therapy to process and heal from difficult life experiences.",
     link: "/services#trauma",
   },
   {
-    icon: Users,
+    image: Img6,
     title: "Relationship Counseling",
     description: "Guidance for navigating relationship challenges, divorce, and family transitions.",
     link: "/services#relationships",
@@ -67,7 +74,7 @@ export default function ServicesSection() {
                 className="group block h-full p-8 rounded-2xl bg-white border border-slate-100 hover:border-blue-100 hover:shadow-lg hover:shadow-blue-600/5 transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-blue-50 group-hover:bg-blue-100 flex items-center justify-center transition-colors">
-                  <service.icon className="w-6 h-6 text-blue-600" />
+                  <img src={service.image} alt={service.title} className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="mt-5 font-heading font-bold text-lg text-slate-900 group-hover:text-blue-600 transition-colors">
                   {service.title}

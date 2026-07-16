@@ -4,13 +4,19 @@ import { ArrowRight, Brain, MessageCircle, Heart, Sun, Shield, Users, Sparkles, 
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
 import TrustBar from "@/components/shared/TrustBar";
+import Img1 from "@/assets/images/20.png";
+import Img2 from "@/assets/images/21.png";
+import Img3 from "@/assets/images/22.png";
+import Img4 from "@/assets/images/23.png";
+import Img5 from "@/assets/images/24.png";
+import Img6 from "@/assets/images/25.png";
 
 const TELEHEALTH_IMG = "https://media.base44.com/images/public/6a4fdb63a7c153c9ebd03dcb/e7e73d236_generated_0f44a7d5.png";
 
 const serviceDetails = [
   {
     id: "assessments",
-    icon: Brain,
+    image: Img1,
     title: "Behavioral Health Assessments",
     subtitle: "Comprehensive evaluations for medical providers and patients",
     description: "Our behavioral health assessments are thorough, clinician-led evaluations designed to support informed medical decision-making. We provide pre-surgical psychological evaluations, bariatric assessments, spinal cord stimulator evaluations, and pain management behavioral screenings.",
@@ -26,7 +32,7 @@ const serviceDetails = [
   },
   {
     id: "counseling",
-    icon: MessageCircle,
+    image: Img2,
     title: "General Counseling",
     subtitle: "Ongoing therapy with licensed clinicians",
     description: "Beyond assessments, our licensed therapists provide compassionate, individualized counseling through telehealth. Whether you're navigating life changes, managing stress, or seeking deeper self-understanding, we're here to help — from wherever you are.",
@@ -42,7 +48,7 @@ const serviceDetails = [
   },
   {
     id: "anxiety",
-    icon: Heart,
+    image: Img3,
     title: "Anxiety Therapy",
     subtitle: "Evidence-based treatment for anxiety disorders",
     description: "Anxiety can feel overwhelming, but you don't have to face it alone. Our therapists specialize in evidence-based approaches like Cognitive Behavioral Therapy (CBT) and mindfulness-based interventions to help you regain control and find calm.",
@@ -58,7 +64,7 @@ const serviceDetails = [
   },
   {
     id: "depression",
-    icon: Sun,
+    image: Img4,
     title: "Depression Counseling",
     subtitle: "Supportive care to help you find your way back",
     description: "Depression affects how you think, feel, and function — but it is treatable. Our clinicians use proven therapeutic methods to help you understand your depression, develop healthier patterns, and rediscover a sense of purpose and connection.",
@@ -74,7 +80,7 @@ const serviceDetails = [
   },
   {
     id: "trauma",
-    icon: Shield,
+    image: Img5,
     title: "Trauma & PTSD Therapy",
     subtitle: "Specialized care for trauma survivors",
     description: "Trauma changes the brain, but healing is possible. Our trauma-informed clinicians create a safe space where you can process painful experiences at your own pace — using therapies like EMDR, CPT, and somatic approaches.",
@@ -90,7 +96,7 @@ const serviceDetails = [
   },
   {
     id: "relationships",
-    icon: Users,
+    image: Img6,
     title: "Relationship & Grief Counseling",
     subtitle: "Navigate life's most challenging transitions",
     description: "Whether you're dealing with the pain of loss, navigating a divorce, or struggling in your relationships, our therapists provide compassionate guidance to help you process your emotions and move forward with clarity.",
@@ -143,7 +149,7 @@ export default function Services() {
             >
               <div className={i % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-5">
-                  <service.icon className="w-4 h-4 text-blue-600" />
+                  {/* <img src={service.image} alt={service.title} className="w-6 h-6 text-blue-600" /> */}
                   <span className="text-xs font-semibold text-blue-700">{service.subtitle}</span>
                 </div>
                 <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate-900 tracking-tight">
@@ -171,7 +177,7 @@ export default function Services() {
 
               <div className={`${i % 2 === 1 ? "lg:order-1" : ""}`}>
                 <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-blue-50 to-slate-50 p-12 flex items-center justify-center border border-slate-100">
-                  <service.icon className="w-32 h-32 text-blue-100" strokeWidth={0.5} />
+                  <img src={service.image} alt={service.title} className="w-full h-full text-blue-600" />
                 </div>
               </div>
             </motion.div>
