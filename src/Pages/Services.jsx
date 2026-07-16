@@ -176,7 +176,7 @@ export default function Services() {
               </div>
 
               <div className={`${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                 <img src={service.image} alt={service.title} className="w-full h-full text-blue-600" />
+                 <img src={service.image} alt={service.title} className="w-full h-full text-blue-600 rounded-2xl object-cover" />
                 {/* <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-blue-50 to-slate-50 p-12 flex items-center justify-center border border-slate-100">
                   <img src={service.image} alt={service.title} className="w-full h-full text-blue-600" />
                 </div> */}
